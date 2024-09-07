@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Milky Silky Site</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        @Html.Partial("_Header")
+    </header>
+
+    <nav>
+        @Html.Partial("_Nav")
+    </nav>
+
+    <div class="banner">
+        @Html.Partial("_Banner")
+    </div>
+
+    <main role="main" class="container">
+        @RenderBody()
+    </main>
+
+    <footer>
+        @Html.Partial("_Footer")
+    </footer>
+
+    <script src="~/js/site.js"></script>
+</body>
+</html>
